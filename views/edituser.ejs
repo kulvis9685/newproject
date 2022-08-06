@@ -1,0 +1,39 @@
+<div class="col-md-6 offset-3 ">
+    <form action="/updates?pro7=<%= data.id;%>" method="post" enctype="multipart/form-data">
+        <div class="card mt-4">
+            <div class="card-header">
+                <h2 class="text text-center">EditUser Form</h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group ">
+                    <label>Firstname</label>
+                    <input type="text" class="form-control" name="firstname"  value="<%= data.firstname%>">
+                </div>
+                <div class="form-group mt-4">
+                    <label>Lastname</label>
+                    <input type="text" class="form-control" name="lastname"  value="<%= data.lastname;%>">
+                </div>
+                <div class="form-group mt-4">
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="email" value="<%= data.email%>">
+                </div>
+                <div class="form-group mt-4">
+                    <label>Contact</label>
+                    <input type="number" class="form-control" name="contact" value="<%= data.contact;%>">
+                </div>
+                <div class="form-group mt-4">
+                    <label>Address</label>
+                    <textarea class="form-control" name="address"><%= data.address;%></textarea>
+                </div>
+                <div class="form-group mt-4">
+                    <label>Gender</label>
+                    Male<input type="radio" name="gender" value="male" <% if(data.gender=='male'){%>selected=selected<%}%>>
+                    Female<input type="radio" name="gender" value="female" <% if(data.gender=='female'){%>selected=selected<%}%>>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</div> 

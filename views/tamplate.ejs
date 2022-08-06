@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: indigo;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h1 style="font-family: itelic; margin-left: 30px;">E Commerce</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="/Product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="/shop">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="/register">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="/register_user">User list</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <%- include(pagename);%>
+      
+
+</body>
+</html>

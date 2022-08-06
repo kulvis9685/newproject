@@ -1,0 +1,35 @@
+<div class="container">
+    <p class="display-5 text text-center fw-bold">All Create Product</p>
+    <div class="row">
+    <% for(let i=0; i < pro1.length; i++){%>
+        <div class="col-3 mt-4">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-8">
+                            <h3 style="border-radius: 20px; color:#e69731;"><%= pro1[i].product_name;%></h3>
+                        </div>
+                        <div class="col-4">
+                            <i class="fa-solid fa fa-heart" style="color: red; font-size: 40px;" ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body text text-center">
+                    <img src="/img/<%= pro1[i].product_img;%>"  height="200px" width="200px">
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>price</h4>
+                            <h4 class="fw-bold"><%= pro1[i].price%></h4>
+                        </div>
+                        <div class="col-6 btn btn-right">
+                            <a href="/addcard" class="btn btn-info">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <%}%>
+    </div>
+</div>

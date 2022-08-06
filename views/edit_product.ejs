@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <form action="/update?productId=<%= data.id;%>" method="post" enctype="multipart/form-data">
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h3 class="text text-center">Edit Product</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group mt-4">
+                            <lable>Product Image</lable>
+                            <input type="file" class="form-control" name="pro_img" value="<%= data.product_img;%>">
+                        </div>
+                        <div class="form-group mt-4">
+                            <lable>Product Name</lable>
+                            <input type="text" class="form-control"  name="pro_name" value="<%= data.product_name;%>">
+                        </div>
+                        <div class="form-group mt-4">
+                            <lable>Price</lable>
+                            <input type="number" class="form-control" name="pro_price" value="<%= data.price%>">
+                        </div>
+                        <div class="form-group mt-4">
+                           <lable>Category</lable>
+                           <select class="form-control" name="category">
+                               <option value="select" <% if(data.category=='select'){%>selected=selected<%}%>>Select</option>
+                               <option value="electronic" <% if(data.category=='electronic'){%>selected=selected<%}%>>Electronic</option>
+                               <option value="mans_product" <% if(data.category=='mans_product'){%>selected=selected<%}%>>Mans product</option>
+                               <option value="girls_product" <% if(data.category=='girls_product'){%>selected=selected<%}%>>Girls product</option>
+                               <option value="Fshion" <% if(data.category=='Fshion'){%>selected=selected<%}%>>Fshion</option>
+                           </select>
+                       </div> 
+                        <div class="form-group mt-4">
+                            <lable>Discription</lable>
+                            <textarea class="form-control" rows="3" type="text" name="discription"><%= data.discription%></textarea>
+                        </div>
+                        <div class="form-group mt-4">
+                            <lable>Quantity</lable>
+                            <input type="number" class="form-control" name="pro_quantity" value="<%= data.quantity%>">
+                        </div> 
+                    </div>
+                    <div class="card-footer mt-4">
+                        <button class="btn btn-primary" type="submit">Update</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
