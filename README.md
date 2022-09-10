@@ -1,2 +1,0 @@
-# newproject
-e-commerce project

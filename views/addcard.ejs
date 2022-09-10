@@ -1,0 +1,16 @@
+<table class="table table-borderd table-hover table-warning table-striped">
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>ProductId</th>
+            <th>UserId</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(let i=0; i< datapro.length; i++){%>
+            <tr>
+                <td><%= datapro[i].userId; %></td>
+            </tr>
+        <%}%>
+    </tbody>
+</table>

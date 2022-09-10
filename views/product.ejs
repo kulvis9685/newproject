@@ -5,7 +5,7 @@
             <a href="/creat_product" class="btn btn-success">Creat Product</a>
         </div>
     </div>
-    <table class="table table-borderd table-hover table-info table-striped">
+    <table class="table table-borderd table-hover table-secondary table-striped">
         <thead>
             <tr>
                 <th>S.no</th>
@@ -22,7 +22,7 @@
                 <tr>
                     <td><%= i+1;%></td>
                     <td>
-                        <img src="/img/<%= prodata[i].product_img;%>" alt="" height="100px" width="100px">
+                        <img src="/product_img/<%= prodata[i].product_img;%>" alt="" height="100px" width="100px">
                     </td>
                     <td><%= prodata[i].product_name%></td>
                     <td><%= prodata[i].price%></td>

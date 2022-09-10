@@ -1,5 +1,5 @@
 <div class="col-md-6 offset-3 ">
-    <form action="/updates?pro7=<%= data.id;%>" method="post" enctype="multipart/form-data">
+    <form action="/updates?userpro=<%= data.id;%>" method="post" enctype="multipart/form-data">
         <div class="card mt-4">
             <div class="card-header">
                 <h2 class="text text-center">EditUser Form</h2>
@@ -27,9 +27,8 @@
                 </div>
                 <div class="form-group mt-4">
                     <label>Gender</label>
-                    Male<input type="radio" name="gender" value="male" <% if(data.gender=='male'){%>selected=selected<%}%>>
-                    Female<input type="radio" name="gender" value="female" <% if(data.gender=='female'){%>selected=selected<%}%>>
-                </div>
+                    Male<input type="radio" name="gender" value="male"<% if(data.gender=='male'){%>checked=checked<%}%>>
+                    Female<input type="radio" name="gender" value="female"<% if(data.gender=='female'){%>checked=checked<%}%>>
             </div>
             <div class="card-footer">
                 <button class="btn btn-primary" type="submit">Submit</button>

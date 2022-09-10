@@ -31,11 +31,16 @@
                 </div>
                 <div class="form-group mt-4">
                     <label>Gender</label>
-                    Male<input type="radio" class="" name="gender" value="male">
-                    Female<input type="radio" class="" name="gender" value="female">
+                    Male<input type="radio"  name="gender" value="male">
+                    Female<input type="radio"  name="gender" value="female">
                 </div>
             </div>
             <div class="card-footer">
+                <% if(status && message){%>
+                    <h6 class="text text-center text-danger">
+                      <%= message;%>
+                    </h6>
+                 <%}%>
                 <button class="btn btn-primary" type="submit">Submit</button>
             </div>
         </div>

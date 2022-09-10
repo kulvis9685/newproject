@@ -23,17 +23,17 @@
                         <div class="form-group mt-4">
                            <lable>Category</lable>
                            <select class="form-control" name="category">
-                               <option value="select" <% if(data.category=='select'){%>selected=selected<%}%>>Select</option>
-                               <option value="electronic" <% if(data.category=='electronic'){%>selected=selected<%}%>>Electronic</option>
-                               <option value="mans_product" <% if(data.category=='mans_product'){%>selected=selected<%}%>>Mans product</option>
-                               <option value="girls_product" <% if(data.category=='girls_product'){%>selected=selected<%}%>>Girls product</option>
+                               <option value="Select" <% if(data.category=='Select'){%>selected=selected<%}%>>Select</option>
+                               <option value="Electronic" <% if(data.category=='Electronic'){%>selected=selected<%}%>>Electronic</option>
+                               <option value="Mans product" <% if(data.category=='Mans product'){%>selected=selected<%}%>>Mans product</option>
+                               <option value="Girls product" <% if(data.category=='Girls product'){%>selected=selected<%}%>>Girls product</option>
                                <option value="Fshion" <% if(data.category=='Fshion'){%>selected=selected<%}%>>Fshion</option>
                            </select>
                        </div> 
-                        <div class="form-group mt-4">
+                        <!-- <div class="form-group mt-4">
                             <lable>Discription</lable>
                             <textarea class="form-control" rows="3" type="text" name="discription"><%= data.discription%></textarea>
-                        </div>
+                        </div> -->
                         <div class="form-group mt-4">
                             <lable>Quantity</lable>
                             <input type="number" class="form-control" name="pro_quantity" value="<%= data.quantity%>">
